@@ -5,10 +5,13 @@ import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTDecodeException;
 import com.auth0.jwt.exceptions.JWTVerificationException;
+import com.auth0.jwt.interfaces.DecodedJWT;
+import com.google.gson.Gson;
 import com.pjb.springbootjwt.annotation.PassToken;
 import com.pjb.springbootjwt.annotation.UserLoginToken;
 import com.pjb.springbootjwt.entity.User;
 import com.pjb.springbootjwt.service.UserService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.method.HandlerMethod;
 
@@ -24,6 +27,7 @@ import java.lang.reflect.Method;
  * @author jinbin
  * @date 2018-07-08 20:41
  */
+@Slf4j
 public class AuthenticationInterceptor implements HandlerInterceptor {
     @Autowired
     UserService userService;
@@ -65,7 +69,11 @@ public class AuthenticationInterceptor implements HandlerInterceptor {
                 // 验证 token
                 JWTVerifier jwtVerifier = JWT.require(Algorithm.HMAC256(user.getPassword())).build();
                 try {
-                    jwtVerifier.verify(token);
+                    DecodedJWT jwt = jwtVerifier.verify(token);
+                    log.info(new Gson().toJson(jwt.getHeader()));
+                    log.info(new Gson().toJson(jwt.getPayload()));
+                    log.info(new Gson().toJson(jwt.getSignature()));
+                    log.info(new Gson().toJson(jwt.getToken()));
                 } catch (JWTVerificationException e) {
                     throw new RuntimeException("401");
                 }

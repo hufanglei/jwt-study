@@ -1,4 +1,4 @@
-package com.pjb.springbootjwt.api;
+package com.pjb.springbootjwt.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import com.pjb.springbootjwt.annotation.UserLoginToken;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @RequestMapping("/api")
-public class UserApi {
+public class UserApiController {
     @Autowired
     UserService userService;
     @Autowired
