@@ -1,4 +1,4 @@
-package com.pjb.springbootjjwt;
+package com.pjb.springbootjwt;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;

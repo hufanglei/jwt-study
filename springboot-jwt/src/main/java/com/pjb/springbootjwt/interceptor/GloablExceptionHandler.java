@@ -1,4 +1,4 @@
-package com.pjb.springbootjjwt.interceptor;
+package com.pjb.springbootjwt.interceptor;
 
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.web.bind.annotation.ControllerAdvice;

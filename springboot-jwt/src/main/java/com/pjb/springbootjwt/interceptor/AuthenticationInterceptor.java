@@ -1,16 +1,15 @@
-package com.pjb.springbootjjwt.interceptor;
+package com.pjb.springbootjwt.interceptor;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTDecodeException;
 import com.auth0.jwt.exceptions.JWTVerificationException;
-import com.pjb.springbootjjwt.annotation.PassToken;
-import com.pjb.springbootjjwt.annotation.UserLoginToken;
-import com.pjb.springbootjjwt.entity.User;
-import com.pjb.springbootjjwt.service.UserService;
+import com.pjb.springbootjwt.annotation.PassToken;
+import com.pjb.springbootjwt.annotation.UserLoginToken;
+import com.pjb.springbootjwt.entity.User;
+import com.pjb.springbootjwt.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.web.method.HandlerMethod;
 
 import org.springframework.web.servlet.HandlerInterceptor;

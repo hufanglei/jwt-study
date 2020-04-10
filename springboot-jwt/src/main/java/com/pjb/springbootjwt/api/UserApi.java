@@ -1,10 +1,10 @@
-package com.pjb.springbootjjwt.api;
+package com.pjb.springbootjwt.api;
 
 import com.alibaba.fastjson.JSONObject;
-import com.pjb.springbootjjwt.annotation.UserLoginToken;
-import com.pjb.springbootjjwt.entity.User;
-import com.pjb.springbootjjwt.service.TokenService;
-import com.pjb.springbootjjwt.service.UserService;
+import com.pjb.springbootjwt.annotation.UserLoginToken;
+import com.pjb.springbootjwt.entity.User;
+import com.pjb.springbootjwt.service.TokenService;
+import com.pjb.springbootjwt.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

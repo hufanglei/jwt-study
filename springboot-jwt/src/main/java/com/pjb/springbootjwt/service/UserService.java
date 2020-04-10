@@ -1,7 +1,7 @@
-package com.pjb.springbootjjwt.service;
+package com.pjb.springbootjwt.service;
 
-import com.pjb.springbootjjwt.entity.User;
-import com.pjb.springbootjjwt.mapper.UserMapper;
+import com.pjb.springbootjwt.entity.User;
+import com.pjb.springbootjwt.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

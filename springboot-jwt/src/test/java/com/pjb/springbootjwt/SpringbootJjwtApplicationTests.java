@@ -1,4 +1,4 @@
-package com.pjb.springbootjjwt;
+package com.pjb.springbootjwt;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

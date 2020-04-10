@@ -1,12 +1,10 @@
-package com.pjb.springbootjjwt.config;
+package com.pjb.springbootjwt.config;
 
-import com.pjb.springbootjjwt.interceptor.AuthenticationInterceptor;
-import org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration;
+import com.pjb.springbootjwt.interceptor.AuthenticationInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 /**
  * @author jinbin

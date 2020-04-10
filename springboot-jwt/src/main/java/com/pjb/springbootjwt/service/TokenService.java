@@ -1,8 +1,8 @@
-package com.pjb.springbootjjwt.service;
+package com.pjb.springbootjwt.service;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
-import com.pjb.springbootjjwt.entity.User;
+import com.pjb.springbootjwt.entity.User;
 import org.springframework.stereotype.Service;
 
 

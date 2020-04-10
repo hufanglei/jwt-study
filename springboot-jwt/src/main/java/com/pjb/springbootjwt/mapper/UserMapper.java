@@ -1,6 +1,6 @@
-package com.pjb.springbootjjwt.mapper;
+package com.pjb.springbootjwt.mapper;
 
-import com.pjb.springbootjjwt.entity.User;
+import com.pjb.springbootjwt.entity.User;
 import org.apache.ibatis.annotations.Param;
 
 /**

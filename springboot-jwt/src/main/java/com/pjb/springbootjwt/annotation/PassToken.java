@@ -1,4 +1,4 @@
-package com.pjb.springbootjjwt.annotation;
+package com.pjb.springbootjwt.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,10 +7,10 @@ import java.lang.annotation.Target;
 
 /**
  * @author jinbin
- * @date 2018-07-08 20:40
+ * @date 2018-07-08 20:38
  */
 @Target({ElementType.METHOD, ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface UserLoginToken {
+public @interface PassToken {
     boolean required() default true;
 }
