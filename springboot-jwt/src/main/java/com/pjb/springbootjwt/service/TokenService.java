@@ -18,12 +18,12 @@ public class TokenService {
     /*
      * 创建私钥
      */
-//    private static final byte[] SECRET = "6MNSobBRCHGIO0fS6MNSobBRCHGIO0fS".getBytes();
-//    private static final byte[] SECRET = "6MNSobBRCHGIO0fS6MNSobBRCHGIO0fS".getBytes();
+//    private templates final byte[] SECRET = "6MNSobBRCHGIO0fS6MNSobBRCHGIO0fS".getBytes();
+//    private templates final byte[] SECRET = "6MNSobBRCHGIO0fS6MNSobBRCHGIO0fS".getBytes();
 //    RSAKey publicKey;
 //    RSAKey privateKey = new RSAKeyGenerator(2048).generate();
 
-//    static {
+//    templates {
 //        /**
 //         * 生成公钥，公钥是提供出去，让使用者校验token的签名
 //         */

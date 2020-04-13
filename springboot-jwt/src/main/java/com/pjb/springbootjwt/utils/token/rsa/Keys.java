@@ -30,28 +30,14 @@ import javax.annotation.PostConstruct;
 public class Keys {
 
     public static final String KEY_ALGORITHM = "RSA";
-    //    public static final String SIGNATURE_ALGORITHM = "MD5withRSA";
+    //    public templates final String SIGNATURE_ALGORITHM = "MD5withRSA";
     public static final String PUBLIC_KEY = "RSAPublicKey";
     public static final String PRIVATE_KEY = "RSAPrivateKey";
 
     public static RSAPrivateKey privateKey;
     public static RSAPublicKey publicRsaKey;
 
-    public static void main(String[] args) {
-        Map<String, Object> keyMap;
-        try {
-            keyMap = initKey();
-            String publicKey = getPublicKey(keyMap);
-            System.out.println("打印公钥:====");
-            System.out.println(publicKey);
-            String privateKey = getPrivateKey(keyMap);
-            System.out.println("打印私钥:====");
-            System.out.println(privateKey);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
 
-    }
 
     public static String getPublicKey(Map<String, Object> keyMap) throws Exception {
         Key key = (Key) keyMap.get(PUBLIC_KEY);
@@ -87,6 +73,22 @@ public class Keys {
         keyMap.put(PUBLIC_KEY, publicRsaKey);
         keyMap.put(PRIVATE_KEY, privateKey);
         return keyMap;
+    }
+
+    public static void main(String[] args) {
+        Map<String, Object> keyMap;
+        try {
+            keyMap = initKey();
+            String publicKey = getPublicKey(keyMap);
+            System.out.println("打印公钥:====");
+            System.out.println(publicKey);
+            String privateKey = getPrivateKey(keyMap);
+            System.out.println("打印私钥:====");
+            System.out.println(privateKey);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 
 }
