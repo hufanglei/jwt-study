@@ -1,0 +1,19 @@
+
+{
+  "result": "响应状态",
+  "timestamp": "服务器的时间戳",
+  "requestId": "客户端请求的X-Request-Id",
+  "data": [
+    {
+      "id":"角色id",
+      "roleName":"角色名称",
+      "remark":" 备注",
+      "providerId":"应用id,涉及多租户功能必须"
+    }
+  ],
+  "errorCode": "错误码，在业务状态为FAILED时出现",
+  "errorMessage": "错误信息，在业务状态为FAILED时出现",
+  "extMessage": "错误扩展信息,在业务状态为FAILED时，出现",
+  "errorFrom": "返回错误码的来源业务域的名称,，在业务状态为FAILED时出现",
+  "totalCount": "总记录数"
+}

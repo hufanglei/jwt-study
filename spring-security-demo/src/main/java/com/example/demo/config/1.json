@@ -1,0 +1,44 @@
+[
+  {
+    "name": "result",
+    "type": 0,
+    "remark": "响应状态码",
+    "must": 0,
+    "mock": "SUCCEED"
+  },
+  {
+    "name": "timestamp",
+    "type": 0,
+    "remark": "响应时间",
+    "must": 1,
+    "mock": ""
+  },
+  {
+    "name": "requestId",
+    "type": 0,
+    "remark": "客户端请求的id",
+    "must": 1,
+    "mock": ""
+  },
+  {
+    "name": "data",
+    "type": 0,
+    "remark": "业务数据",
+    "must": 1,
+    "mock": ""
+  },
+  {
+    "name": "errorCode",
+    "type": 0,
+    "remark": "错误码，在业务状态为FAILED时，出现",
+    "must": 0,
+    "mock": ""
+  },
+  {
+    "name": "errorMessage",
+    "type": 0,
+    "remark": "错误信息，在业务状态为FAILED时，出现",
+    "must": 0,
+    "mock": ""
+  }
+]
